@@ -1,0 +1,18 @@
+
+$(document).ready(function(){ // animating text inside cards manuyally
+        $('.card-body').hover(
+			//on mouse hover trigger this effect (Text will jump up)
+            function(){
+                $(this).animate({
+                    marginTop: "-=3%",
+                },200);
+            },
+
+          // on mouse exit effect
+            function(){
+                $(this).animate({
+                    marginTop: "0%"
+                },200);
+            }
+        );
+    });
